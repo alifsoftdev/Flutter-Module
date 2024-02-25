@@ -12,7 +12,7 @@ class _HomeViewState extends State<HomeView> {
   String selectedCity = 'English'; // Default selected city
 
   List<String> cities = [
-    'Bangla',
+    'বাংলা',
     'English',
   ];
   @override
@@ -50,7 +50,7 @@ class _HomeViewState extends State<HomeView> {
                   var localeBN = const Locale('bn', 'BN');
                   var localeUS = const Locale('en', 'US');
                   selectedCity = newValue.toString();
-                  if (selectedCity != 'Bangla') {
+                  if (selectedCity != 'বাংলা') {
                     Get.updateLocale(localeUS);
                   } else {
                     Get.updateLocale(localeBN);
